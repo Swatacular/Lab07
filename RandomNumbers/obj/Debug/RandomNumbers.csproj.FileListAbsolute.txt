@@ -1,0 +1,5 @@
+C:\Users\Thomas\Desktop\Programming\Version-Control\Lab07\RandomNumbers\bin\Debug\RandomNumbers.exe.config
+C:\Users\Thomas\Desktop\Programming\Version-Control\Lab07\RandomNumbers\bin\Debug\RandomNumbers.exe
+C:\Users\Thomas\Desktop\Programming\Version-Control\Lab07\RandomNumbers\bin\Debug\RandomNumbers.pdb
+C:\Users\Thomas\Desktop\Programming\Version-Control\Lab07\RandomNumbers\obj\Debug\RandomNumbers.exe
+C:\Users\Thomas\Desktop\Programming\Version-Control\Lab07\RandomNumbers\obj\Debug\RandomNumbers.pdb
