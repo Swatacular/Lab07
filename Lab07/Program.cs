@@ -26,25 +26,46 @@ namespace Lab07
             Console.Clear();
 
 
-            Console.WriteLine("0".PadLeft(3) + " -" + "9".PadLeft(3) + ": " + GetHoizPipsString(0));
+            //Console.WriteLine("0".PadLeft(3) + " -" + "9".PadLeft(3) + ": " + GetHoizPipsString(0));
+            //Console.WriteLine();
+            //Console.WriteLine("10".PadLeft(3) + " -" + "19".PadLeft(3) + ": " + GetHoizPipsString(1));
+            //Console.WriteLine();
+            //Console.WriteLine("20".PadLeft(3) + " -" + "29".PadLeft(3) + ": " + GetHoizPipsString(2));
+            //Console.WriteLine();
+            //Console.WriteLine("30".PadLeft(3) + " -" + "39".PadLeft(3) + ": " + GetHoizPipsString(3));
+            //Console.WriteLine();
+            //Console.WriteLine("40".PadLeft(3) + " -" + "49".PadLeft(3) + ": " + GetHoizPipsString(4));
+            //Console.WriteLine();
+            //Console.WriteLine("50".PadLeft(3) + " -" + "59".PadLeft(3) + ": " + GetHoizPipsString(5));
+            //Console.WriteLine();
+            //Console.WriteLine("60".PadLeft(3) + " -" + "69".PadLeft(3) + ": " + GetHoizPipsString(6));
+            //Console.WriteLine();
+            //Console.WriteLine("70".PadLeft(3) + " -" + "79".PadLeft(3) + ": " + GetHoizPipsString(7));
+            //Console.WriteLine();
+            //Console.WriteLine("80".PadLeft(3) + " -" + "89".PadLeft(3) + ": " + GetHoizPipsString(8));
+            //Console.WriteLine();
+            //Console.WriteLine("90".PadLeft(3) + " -" + "100".PadLeft(3) + ": " + GetHoizPipsString(9));
+            //Console.WriteLine();
+
+            Console.WriteLine("  0 -  9: " + GetHoizPipsString(0));
             Console.WriteLine();
-            Console.WriteLine("10".PadLeft(3) + " -" + "19".PadLeft(3) + ": " + GetHoizPipsString(1));
+            Console.WriteLine(" 10 - 19: " + GetHoizPipsString(1));
             Console.WriteLine();
-            Console.WriteLine("20".PadLeft(3) + " -" + "29".PadLeft(3) + ": " + GetHoizPipsString(2));
+            Console.WriteLine(" 20 - 29: " + GetHoizPipsString(2));
             Console.WriteLine();
-            Console.WriteLine("30".PadLeft(3) + " -" + "39".PadLeft(3) + ": " + GetHoizPipsString(3));
+            Console.WriteLine(" 30 - 39: " + GetHoizPipsString(3));
             Console.WriteLine();
-            Console.WriteLine("40".PadLeft(3) + " -" + "49".PadLeft(3) + ": " + GetHoizPipsString(4));
+            Console.WriteLine(" 40 - 49: " + GetHoizPipsString(4));
             Console.WriteLine();
-            Console.WriteLine("50".PadLeft(3) + " -" + "59".PadLeft(3) + ": " + GetHoizPipsString(5));
+            Console.WriteLine(" 50 - 59: " + GetHoizPipsString(5));
             Console.WriteLine();
-            Console.WriteLine("60".PadLeft(3) + " -" + "69".PadLeft(3) + ": " + GetHoizPipsString(6));
+            Console.WriteLine(" 60 - 69: " + GetHoizPipsString(6));
             Console.WriteLine();
-            Console.WriteLine("70".PadLeft(3) + " -" + "79".PadLeft(3) + ": " + GetHoizPipsString(7));
+            Console.WriteLine(" 70 - 79: " + GetHoizPipsString(7));
             Console.WriteLine();
-            Console.WriteLine("80".PadLeft(3) + " -" + "89".PadLeft(3) + ": " + GetHoizPipsString(8));
+            Console.WriteLine(" 80 - 89: " + GetHoizPipsString(8));
             Console.WriteLine();
-            Console.WriteLine("90".PadLeft(3) + " -" + "100".PadLeft(3) + ": " + GetHoizPipsString(9));
+            Console.WriteLine(" 90 - 100: " + GetHoizPipsString(9));
             Console.WriteLine();
 
 
@@ -83,6 +104,7 @@ namespace Lab07
         {
             string pip = "";
 
+            //  \/ I.E. 4 pips from 10-19 range
             if (Histogram[arrayIndex] >= rowFromBottom) pip += "*";
 
             return pip;
@@ -90,12 +112,12 @@ namespace Lab07
 
         private static string GetHoizPipsString(int arrayIndex)
         {
-            string pipString = "";
+            string pipString = new string('*', Histogram[arrayIndex]);
 
-            for (int i = 0; i < Histogram[arrayIndex]; i++)
-            {
-                pipString += "*"/*.PadRight(2)*/;
-            }
+            //for (int i = 0; i < Histogram[arrayIndex]; i++)
+            //{
+            //    pipString += "*"/*.PadRight(2)*/;
+            //}
 
             return pipString;
         }
